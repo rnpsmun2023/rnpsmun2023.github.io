@@ -3524,7 +3524,7 @@ input, select, textarea {
 					border-radius: 100%;
 					display: block;
 					width: 100%;
-					border:2px solid gold !important;
+					border: 2px solid gold !important;
 				}
 
 	body.is-touch #banner {
