@@ -15,54 +15,57 @@
 		<script>
 			window.onload = function(){ 
    
-			var modal = document.getElementById("myModal");
-			
-			// Get the button that opens the modal
-			var btn = document.getElementById("myBtn");
-			
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-			
-			// When the user clicks the button, open the modal 
-			btn.onclick = function() {
-			  modal.style.display = "block";
+				var modal = document.getElementById("myModal");
+				var modal2 = document.getElementById("myModal2");
+				var btn = document.getElementById("myBtn");
+				var btn2 = document.getElementById("myBtn2");
+				var span = document.getElementsByClassName("close")[0];
+				var span2 = document.getElementsByClassName("close2")[0]; 
+				btn.onclick = function() {
+			  		modal.style.display = "block";
+				}
+				btn2.onclick = function() {
+			  		modal2.style.display = "block";
+				}
+				span.onclick = function() {
+					modal.style.display = "none";
+				}
+				span2.onclick = function() {
+					modal2.style.display = "none";
+				}
+				window.onclick = function(event) {
+			  		if (event.target == modal) {
+					modal.style.display = "none";
+			  		}
+				}
+				window.onclick = function(event) {
+			  		if (event.target == modal2) {
+					modal2.style.display = "none";
+					}
+			  	}
 			}
-			
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-			  modal.style.display = "none";
-			}
-			
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-			  if (event.target == modal) {
-				modal.style.display = "none";
-			  }
-			}}
-			</script>
+		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
 		body {font-family: Arial, Helvetica, sans-serif;}
 		
-		/* The Modal (background) */
 		.modal {
-		  display: none; /* Hidden by default */
-		  position: fixed; /* Stay in place */
-		  z-index: 1; /* Sit on top */
-		  padding-top: 100px; /* Location of the box */
+		  display: none;
+		  position: fixed;
+		  z-index: 1;
+		  padding-top: 100px;
 		  left: 0;
 		  top: 0;
-		  width: 100%; /* Full width */
-		  height: 100%; /* Full height */
-		  overflow: auto; /* Enable scroll if needed */
-		  background-color: rgb(0,0,0); /* Fallback color */
-		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		  width: 100%;
+		  height: 100%; 
+		  overflow: auto; 
+		  background-color: rgb(0,0,0); 
+		  background-color: rgba(0,0,0,0.4); 
 		}
 		
-		/* Modal Content */
 		.modal-content {
 		  position: relative;
-		  background-color: #fefefe;
+		  background-image: linear-gradient(to right, rgba(150, 192, 209, 0.6), rgba(121, 180, 214, 0.6));
 		  margin: auto;
 		  padding: 0;
 		  border: 1px solid #888;
@@ -74,7 +77,6 @@
 		  animation-duration: 0.4s
 		}
 		
-		/* Add Animation */
 		@-webkit-keyframes animatetop {
 		  from {top:-300px; opacity:0} 
 		  to {top:0; opacity:1}
@@ -85,7 +87,6 @@
 		  to {top:0; opacity:1}
 		}
 		
-		/* The Close Button */
 		.close {
 		  color: white;
 		  float: right;
@@ -102,7 +103,7 @@
 		
 		.modal-header {
 		  padding: 2px 16px;
-		  background-color: #5cb85c;
+		  background-image: linear-gradient(to right, rgb(35, 92, 192, 0.8), rgb(37, 43, 87, 0.8));
 		  color: white;
 		}
 		
@@ -110,7 +111,7 @@
 		
 		.modal-footer {
 		  padding: 2px 16px;
-		  background-color: #5cb85c;
+		  background-image: linear-gradient(to right, rgb(35, 92, 192, 0.8), rgb(37, 43, 87, 0.8));
 		  color: white;
 		}
 		</style>
@@ -118,7 +119,7 @@
 	<body class="is-preload landing">
 		<div id="page-wrapper">
 
-			<!-- Header -->
+		
 				<header id="header">
 					<h1 id="logo"><a href="index.html">RNPSMUN 2022</a></h1>
 					<nav id="nav">
@@ -132,15 +133,6 @@
 									<li><a href="aippm.html">All India Political Parties Meet</a></li>
 									<li><a href="fcc.html">Futuristic Crisis Committee</a></li>
 									<li><a href="ipc.html">International Press Corps</a></li>
-									<!--<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li> -->
 								</ul>
 							</li>
 							<li><a href="eb.html">Secretariat</a></li>
@@ -198,39 +190,6 @@
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</section>
 
-			<!-- Two -->
-			<!--	<section id="two" class="spotlight style2 right">
-					
-					<div class="content">
-						<header>
-							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
-						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
-							<li><a class="button" id="myBtn" class="special">LETTER FROM THE SECRETARY GENERAL</a></li>
-							<div id="myModal" class="modal">
-
-						
-								<div class="modal-content">
-								  <div class="modal-header">
-									<span class="close">&times;</span>
-									<h2>Modal Header</h2>
-								  </div>
-								  <div class="modal-body">
-									<p>Some text in the Modal Body</p>
-									<p>Some other text...</p>
-								  </div>
-								  <div class="modal-footer">
-									<h3>Modal Footer</h3>
-								  </div>
-								</div>
-							  
-							  </div>
-						</ul>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</section> -->
 			<section id="two" class="wrapper style1 special fade-up">
 				<div class="container">
 					<header class="major">
@@ -243,12 +202,10 @@
 						<ul class="actions special">
 							<li><a class="button" id="myBtn" class="special">LETTER FROM THE SECRETARY GENERAL</a></li>
 							<div id="myModal" class="modal">
-
-						
 								<div class="modal-content">
 								  <div class="modal-header">
 									<span class="close">&times;</span>
-									<h2>Modal Header</h2>
+									<h2>LETTER FROM THE SECRETARY GENERAL</h2>
 								  </div>
 								  <div class="modal-body">
 									<p>Some text in the Modal Body</p>
@@ -258,13 +215,14 @@
 									<h3>Modal Footer</h3>
 								  </div>
 								</div>
-							  
 							  </div>
 						</ul>
 					</footer>
 				</div>
-				<a href="#three" class="goto-next scrolly">Next</a>
+				<a href="#three" class="scrolly"></a>
 			</section>
+			<hr>
+			
 			<section id="three" class="wrapper style1 special fade-up">
 				<div class="container">
 					<header class="major">
@@ -275,14 +233,12 @@
 					<footer class="major">
 						<p>Enter description here</p>
 						<ul class="actions special">
-							<li><a class="button" id="myBtn" class="special">LETTER FROM THE DIRECTOR GENERAL</a></li>
-							<div id="myModal" class="modal">
-
-						
+							<li><a class="button" id="myBtn2" class="special">LETTER FROM THE DIRECTOR GENERAL</a></li>
+							<div id="myModal2" class="modal">
 								<div class="modal-content">
 								  <div class="modal-header">
-									<span class="close">&times;</span>
-									<h2>Modal Header</h2>
+									<span class="close2">&times;</span>
+									<h2>LETTER FROM THE DIRECTOR GENERAL</h2>
 								  </div>
 								  <div class="modal-body">
 									<p>Some text in the Modal Body</p>
@@ -292,7 +248,6 @@
 									<h3>Modal Footer</h3>
 								  </div>
 								</div>
-							  
 							  </div>
 						</ul>
 					</footer>
