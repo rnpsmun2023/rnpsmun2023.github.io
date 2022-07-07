@@ -12,11 +12,114 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			window.onload = function(){ 
+   
+				var modal = document.getElementById("myModal");
+				var modal2 = document.getElementById("myModal2");
+				var btn = document.getElementById("myBtn");
+				var btn2 = document.getElementById("myBtn2");
+				var span = document.getElementsByClassName("close")[0];
+				var span2 = document.getElementsByClassName("close2")[0]; 
+				btn.onclick = function() {
+			  		modal.style.display = "block";
+				}
+				btn2.onclick = function() {
+			  		modal2.style.display = "block";
+				}
+				span.onclick = function() {
+					modal.style.display = "none";
+				}
+				span2.onclick = function() {
+					modal2.style.display = "none";
+				}
+				window.onclick = function(event) {
+			  		if (event.target == modal) {
+					modal.style.display = "none";
+			  		}
+				}
+				window.onclick = function(event) {
+			  		if (event.target == modal2) {
+					modal2.style.display = "none";
+					}
+			  	}
+			}
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		body {font-family: Arial, Helvetica, sans-serif;}
+		
+		.modal {
+		  display: none;
+		  position: fixed;
+		  z-index: 1;
+		  padding-top: 100px;
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  height: 100%; 
+		  overflow: auto; 
+		  background-color: rgb(0,0,0); 
+		  background-color: rgba(0,0,0,0.4); 
+		}
+		
+		.modal-content {
+		  position: relative;
+		  background-image: linear-gradient(to right, rgba(150, 192, 209, 0.6), rgba(121, 180, 214, 0.6));
+		  margin: auto;
+		  padding: 0;
+		  border: 1px solid #888;
+		  width: 80%;
+		  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+		  -webkit-animation-name: animatetop;
+		  -webkit-animation-duration: 0.4s;
+		  animation-name: animatetop;
+		  animation-duration: 0.4s
+		}
+		
+		@-webkit-keyframes animatetop {
+		  from {top:-300px; opacity:0} 
+		  to {top:0; opacity:1}
+		}
+		
+		@keyframes animatetop {
+		  from {top:-300px; opacity:0}
+		  to {top:0; opacity:1}
+		}
+		
+		.close {
+		  color: white;
+		  float: right;
+		  font-size: 28px;
+		  font-weight: bold;
+		}
+		
+		.close:hover,
+		.close:focus {
+		  color: #000;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+		
+		.modal-header {
+		  padding: 2px 16px;
+		  background-image: linear-gradient(to right, rgb(35, 92, 192, 0.8), rgb(37, 43, 87, 0.8));
+		  color: white;
+		}
+		
+		.modal-body {padding: 2px 16px;}
+		
+		.modal-footer {
+		  padding: 2px 16px;
+		  background-image: linear-gradient(to right, rgb(35, 92, 192, 0.8), rgb(37, 43, 87, 0.8));
+		  color: white;
+		}
+		</style>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
 
-			<!-- Header -->
+		
 				<header id="header">
 					<h1 id="logo"><a href="index.html">RNPSMUN 2022</a></h1>
 					<nav id="nav">
@@ -30,15 +133,6 @@
 									<li><a href="aippm.html">All India Political Parties Meet</a></li>
 									<li><a href="fcc.html">Futuristic Crisis Committee</a></li>
 									<li><a href="ipc.html">International Press Corps</a></li>
-									<!--<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li> -->
 								</ul>
 							</li>
 							<li><a href="eb.html">Secretariat</a></li>
@@ -74,29 +168,21 @@
 				</section>
 			<!-- One -->
 				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+					<span class="image fit main"><img src="images/navybluegradient.jpg" alt="" /></span>
 					<div class="content">
 						<div class="container">
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<header>
-										<h2>Odio faucibus ipsum integer consequat</h2>
-										<p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+										<h2><img src="images/npslogo.png" alt="" /><br>WHAT IS R-NPSMUN</h2>
+										<p>NPS Rajajinagar proudly presents to you the sixth edition of R-NPSMUN!</p>
 									</header>
 								</div>
-								<div class="col-4 col-12-medium">
-									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-									augue varius tempus lobortis porttitor accumsan consequat
-									adipiscing lorem dolor.</p>
+								<div class="col-4 col-12-medium"">
+									<p>An amalgamation of the consistent committees fused with a few unconventional ones, we have ensured that each delegate, new or experienced, has something to look forward to. Delegates will have to think on their feet to keep up with the pace of the debate, combating the obstacles posed, while sticking to the portfolios represented.</p>
 								</div>
 								<div class="col-4 col-12-medium">
-									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
-									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-									ipsum dolor nullam.</p>
+									<p>Alliances will be made, strategies devised, while keeping the nations’ best interests at heart. Factual knowledge along with rational arbitrations will sail you through! So delegates, come be a part of this exhilarating experience!</p>
 								</div>
 							</div>
 						</div>
@@ -104,24 +190,72 @@
 					<a href="#two" class="goto-next scrolly">Next</a>
 				</section>
 
-			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
-						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+			<section id="two" class="wrapper style1 special fade-up">
+				<div class="container">
+					<header class="major">
+						<h2>Secretary General of RNPSMUN 2022</h2>
+						<img src="images/DhrutiDeshpande.jpeg" style="border-radius: 50%; height: 20em; width: 20em;" alt="" /><p>Presenting to you, Dhruti Deshpande!</p><br>
+					</header>
+					
+					<footer class="major">
+						<p>Enter description here</p>
+						<ul class="actions special">
+							<li><a class="button" id="myBtn" class="special">LETTER FROM THE SECRETARY GENERAL</a></li>
+							<div id="myModal" class="modal">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<span class="close">&times;</span>
+									<h2>LETTER FROM THE SECRETARY GENERAL</h2>
+								  </div>
+								  <div class="modal-body">
+									<p>Some text in the Modal Body</p>
+									<p>Some other text...</p>
+								  </div>
+								  <div class="modal-footer">
+									<h3>Modal Footer</h3>
+								  </div>
+								</div>
+							  </div>
 						</ul>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</section>
-
+					</footer>
+				</div>
+				<a href="#three" class="scrolly"></a>
+			</section>
+			<hr>
+			
+			<section id="three" class="wrapper style1 special fade-up">
+				<div class="container">
+					<header class="major">
+						<h2>Director General of RNPSMUN 2022</h2>
+						<img src="images/VishalRao.jpeg" style="border-radius: 50%; height: 20em; width: 20em;" alt="" /><p>Presenting to you, Vishal Rao!</p><br>
+					</header>
+					
+					<footer class="major">
+						<p>Enter description here</p>
+						<ul class="actions special">
+							<li><a class="button" id="myBtn2" class="special">LETTER FROM THE DIRECTOR GENERAL</a></li>
+							<div id="myModal2" class="modal">
+								<div class="modal-content">
+								  <div class="modal-header">
+									<span class="close2">&times;</span>
+									<h2>LETTER FROM THE DIRECTOR GENERAL</h2>
+								  </div>
+								  <div class="modal-body">
+									<p>Some text in the Modal Body</p>
+									<p>Some other text...</p>
+								  </div>
+								  <div class="modal-footer">
+									<h3>Modal Footer</h3>
+								  </div>
+								</div>
+							  </div>
+						</ul>
+					</footer>
+				</div>
+				<a href="#three" class="goto-next scrolly">Next</a>
+			</section>
 			<!-- Three -->
-				<section id="three" class="spotlight style3 left">
+				<section id="four" class="spotlight style3 left">
 					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
 					<div class="content">
 						<header>
@@ -133,11 +267,11 @@
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul>
 					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
+					<a href="#five" class="goto-next scrolly">Next</a>
 				</section>
 
 			<!-- Four -->
-				<section id="four" class="wrapper style1 special fade-up">
+				<section id="five" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
 							<h2>Accumsan sed tempus adipiscing blandit</h2>
