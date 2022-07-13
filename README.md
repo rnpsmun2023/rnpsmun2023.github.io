@@ -44,16 +44,7 @@ This is the official website of the RNPSMUN2022 Event organsized by NPS RNR, sch
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+HTML<br>Javascript<br>CSS<br>SCSS
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -69,17 +60,15 @@ Just go to the website <a href="https://github.com/rnpsmun2022/rnpsmun2022.githu
 
 You can get in touch with us using rnpsmun2022@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## The Tech Team
-Anirudh M
-Aravind S
-Parth K Dubal
-Tarun K
+Anirudh M<br>
+Aravind S<br>
+Parth K Dubal<br>
+Tarun K<br>
 Yash Anand
 
 
