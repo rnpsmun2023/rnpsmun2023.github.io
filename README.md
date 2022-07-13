@@ -1,5 +1,4 @@
 <div id="top"></div>
-[![Contributors][contributors-shield]]5
 <br />
 <div align="center">
   <a href="https://github.com/rnpsmun2022/rnpsmun2022.github.io">
