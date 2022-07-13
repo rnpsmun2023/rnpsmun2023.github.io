@@ -13,6 +13,29 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script>
+			function updateTimer() {
+    future = Date.parse("aug 4, 2022 9:00:00");
+    now = new Date();
+    diff = future - now;
+
+    days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    hours = Math.floor(diff / (1000 * 60 * 60));
+    mins = Math.floor(diff / (1000 * 60));
+    secs = Math.floor(diff / 1000);
+
+    d = days;
+    h = hours - days * 24;
+    m = mins - hours * 60;
+    s = secs - mins * 60;
+
+    document.getElementById("timer")
+        .innerHTML =
+        '<div>' + d + '<span>days</span></div>' +
+        '<div>' + h + '<span>hours</span></div>' +
+        '<div>' + m + '<span>minutes</span></div>' +
+        '<div>' + s + '<span>seconds</span></div>';
+}
+setInterval('updateTimer()', 1000);
 			window.onload = function(){ 
    
 				var modal = document.getElementById("myModal");
@@ -47,6 +70,26 @@
 		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
+			
+
+#timer {
+    font-size: 3em;
+    font-weight: 100;
+    color: white;
+    text-shadow: 0 0 20px #48C8FF;
+}
+
+#timer div {
+    display: inline-block;
+    min-width: 90px;
+}
+
+#timer div span {
+    color: #B1CDF1;
+    display: block;
+    font-size: .35em;
+    font-weight: 400;
+}
 		body {font-family: Arial, Helvetica, sans-serif;}
 		
 		.modal {
@@ -207,8 +250,7 @@
 		</style>
 	</head>
 	<body class="is-preload landing">
-		<div id="page-wrapper">
-
+		
 		
 			<header id="header">
                 <h1 id="logo"><a href="index.html">RNPSMUN 2022</a></h1>
@@ -260,12 +302,17 @@
 									<br>August 2022</strong></p>
 							</p>
 						</center>
+						<div id="timer" style="text-align: center;
+						padding: 70px 50px;
+						font-family: sans-serif;
+						font-weight: lighter;"></div>
 						<p style="font-family: perpetua; font-size: 34px;"> <b> Words are, in my not-so-humble opinion, our most inexhaustible source of magic. Capable of both inflicting injury, and remedying it. <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - Albus Dumbledore</b></p>
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
 			<!-- One -->
 				<section id="one" class="spotlight style1 bottom">
+					<div id="page-wrapper">
 					<span class="image fit main"><img src="images/navybluegradient.jpg" alt="" /></span>-->
 					<div class="content">
 						<div class="container">
@@ -290,6 +337,7 @@
 
 			<section id="two" class="wrapper style1 special fade-up">
 				<div class="container">
+					<div id="page-wrapper">
 					<header class="major">
 						<h2>Secretary General of RNPSMUN 2022</h2>
 						<img src="images/dhruthiD.jpeg" style="border-radius: 50%; height: 20em; width: 20em;" alt="" /><p style="font-size: 1.5em;"> Dhruti Deshpande!</p><br>
