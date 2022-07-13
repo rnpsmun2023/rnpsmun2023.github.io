@@ -35,7 +35,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](./images/sc.jpg)
+<img src="./images/sc.jpg" />
 
 This is the official website of the RNPSMUN2022 Event organsized by NPS RNR, scheduled to be held on the 3rd, 4th and 5th of August 2022.
 
