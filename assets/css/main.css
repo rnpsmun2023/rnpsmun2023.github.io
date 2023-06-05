@@ -3465,7 +3465,7 @@ input, select, textarea {
 		text-align: center;
 		z-index: 21;
 	}
-	@media (max-width: 1000px) {
+	@media (max-width: 800px) {
 		#banner {
 			background-attachment: fixed;
 			background-color: #640404;
