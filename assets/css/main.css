@@ -2561,8 +2561,7 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
-			}
-
+			}		
 /* List */
 
 	ol {
@@ -3457,7 +3456,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: fixed;
 		background-color: #640404;
-		background-image: url;
+		background-image: url("../../images/logo.png");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.037);
@@ -3513,8 +3512,8 @@ input, select, textarea {
 
 			#banner .content .image {
 				border-radius: 100%;
-				height: 22em;
-				width: 22em;
+				height: 26em;
+				width: 26em;
 				display: inline-block;
 				vertical-align: middle;
 			}
@@ -3524,7 +3523,7 @@ input, select, textarea {
 					display: block;
 					width: 100%;
 					height: 100%;
-					border: 2px solid gold !important;
+					border: 2px solid rgb(255, 189, 189) !important;
 				}
 
 	body.is-touch #banner {
