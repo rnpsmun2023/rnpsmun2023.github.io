@@ -1,12 +1,12 @@
 <div id="top"></div>
 <br />
 <div align="center">
-  <a href="https://github.com/rnpsmun2022/rnpsmun2022.github.io">
-    <img src="logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/rnpsmun2023/rnpsmun2022.github.io">
+    <img src="logo 2023.png" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">RNPSMUN 2022</h3>
   <p align="center">
-    The official RNPSMUN 2022 website
+    The official RNPSMUN 2023 website
     <br />
     <a href="https://github.com/rnpsmun2022/rnpsmun2022.github.io"><strong>Explore the docs »</strong></a>
     <br />
@@ -58,17 +58,14 @@ Just go to the website <a href="https://github.com/rnpsmun2022/rnpsmun2022.githu
 
 ## Contact Us
 
-You can get in touch with us using rnpsmun2022@gmail.com
+You can get in touch with us using rnpsmun2023@gmail.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## The Tech Team
-Anirudh M<br>
-Aravind S<br>
 Parth K Dubal<br>
-Tarun K<br>
 Yash Anand
 
 
