@@ -36,7 +36,7 @@
 
 <img src="./images/sc.jpg" />
 
-This is the official website of the RNPSMUN2022 Event organsized by NPS RNR, scheduled to be held on the 3rd, 4th and 5th of August 2022.
+This is the official website of the RNPSMUN2023 Event organsized by NPS RNR, scheduled to be held on the 26th, 27th and 28th of June 2023.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -67,6 +67,7 @@ You can get in touch with us using rnpsmun2023@gmail.com
 ## The Tech Team
 Parth K Dubal<br>
 Yash Anand
+ 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
