@@ -67,8 +67,7 @@ You can get in touch with us using rnpsmun2023@gmail.com
 ## The Tech Team
 Parth K Dubal<br>
 Yash Anand
-and THATS IT
-TWO DUDES WHOOPED UR WEBISTES ASS @DPS 
+ 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
